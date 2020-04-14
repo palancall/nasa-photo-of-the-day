@@ -1,0 +1,25 @@
+.img-div {
+  width: 50%;
+}
+.sidebar {
+  width: 50%;
+  background-color: antiquewhite;
+  padding: 0 4rem;
+  border-radius: 0 25px 25px 0;
+}
+
+.stars-img {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.explanation {
+  line-height: 2rem;
+}
