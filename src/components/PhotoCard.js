@@ -1,21 +1,26 @@
 import React from "react";
-import cardStyle from "./cardStyle.css";
+import "./cardStyle.css";
 
 const PhotoCard = (props) => {
   const photo = props.photo;
-
-  return (
-    <div className="wrapper">
-      <div className="img-div">
-        <img className="stars-img" alt="stars" src={photo.url} />
+  if (!photo) {
+    return <h3>Loading...</h3>;
+  } else {
+    return (
+      <div>
+        <div className="wrapper">
+          <div className="img-div">
+            <img className="stars-img" alt="stars" src={photo.hdurl} />
+          </div>
+          <div className="sidebar">
+            <h2>{photo.title}</h2>
+            <h4>Date: {photo.date}</h4>
+            <p className="explanation">{photo.explanation}</p>
+          </div>
+        </div>
       </div>
-      <div className="sidebar">
-        <h2>{photo.title}</h2>
-        <p>{photo.date}</p>
-        <p className="explanation">{photo.explanation}</p>
-      </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default PhotoCard;

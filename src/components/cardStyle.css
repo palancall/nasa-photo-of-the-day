@@ -10,6 +10,7 @@
 
 .stars-img {
   width: 100%;
+  height: 100%;
 }
 
 .wrapper {
@@ -22,4 +23,19 @@
 
 .explanation {
   line-height: 2rem;
+}
+.year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: brown;
+}
+
+.buttons {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
 }
